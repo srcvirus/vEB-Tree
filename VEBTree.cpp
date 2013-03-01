@@ -6,15 +6,21 @@
  */
 
 #include "VEBTree.h"
+#include <stdio.h>
 
 VEBTree::VEBTree()
 {
-	// TODO Auto-generated constructor stub
+	this->root = NULL;
+}
 
+VEBTree::VEBTree(int u)
+{
+	this->u = u;
+	root = new VEBNode(u);
 }
 
 VEBTree::~VEBTree()
 {
-	// TODO Auto-generated destructor stub
+	delete root;
 }
 
